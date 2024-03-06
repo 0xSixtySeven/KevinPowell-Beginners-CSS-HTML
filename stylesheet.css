@@ -45,17 +45,19 @@ span {
     background-color: blueviolet;
     /* Puting an image as a background */
     background-image: url(./images/digitalpaint.jpg);
-    background-repeat: round;
+    background-repeat: space;
     /* This will make the image not repeat */
     /* Check the other options for background-repeat */
     background-size: cover;
     /* This will make the image cover the entire box */
     /* Check the other options for background-size */
+    background-position: center;
+    /* This will make the image start at the center of the box */
 
     height: 500px;
-    width: auto;
+    width: 500px;
 
-    /* Margin */
+    /* MARGIN */
     margin-top: 100px;
     margin-bottom: 50px;
     margin-left: 150px;
@@ -67,7 +69,7 @@ span {
     /* If we use 3 values the first is the top, the second is the left and right and the third is the bottom */
     /* margin: 100px 50px 25px; */
 
-    /* Border */
+    /* BORDER */
     /* Border style have a lot of options other than the default(solid) */
     border-style: solid;
     border-top: 50px solid red;
@@ -75,7 +77,7 @@ span {
     border-left: 35px solid rgb(0, 89, 7);
     border-right: 10px solid rgb(117, 95, 0);
 
-    /* Padding */
+    /* PADDING */
     padding-top: 75px;
     padding-bottom: 10px;
     padding-left: 60px;
@@ -87,7 +89,195 @@ span {
     /* padding: 100px 50px; */
     /* If we use 3 values the first is the top, the second is the left and right and the third is the bottom */
     /* padding: 100px 50px 25px; */
+}
+
+/* STYLING TEXT */
+
+/* Spacing */
+
+.titlestyle {
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    margin-top: 0px;
+}
+
+.paragraphs {
+    /* Position of the text inside a box */
+    text-align: center;
+    text-decoration: line-through;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: lighter;
+    /* Good practice in this case, we use margin-top: 0px. So we can manage the spaces between paragraphs just with the margin-bottom */
+    /* if only use margin-bottom, the space of top will add to the bottom  */
+    margin-top: 0px;
+    margin-bottom: 15px;
+    /* line-height is used to stablish the space between lines in a paragraph, it will add a space to the Top and Bottom of each line  */
+    /* irs better to use just a number(1, 2, 3, etc.) instead of px in this style */
+    line-height: 1.2;
+}
+
+/* FONTS STYLE */
+
+.bolder {
+    /* bolder will make the text once step bolder than the weight we are using in the paragraph */
+    font-weight: bolder;
+    color: red;
+
+}
+
+.bold {
+    /* bold will make the text the the maximum weight */
+    font-weight: bold;
+    color: red;
 
 
+}
 
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* THERE ARE 5 PSEUDO-CLASSES FOR LINKS: */
+/* ITS IMPORTANT TO PUT THERE IN THIS ORDER */
+
+a:link {
+    /* unvisited links */
+    color: brown;
+}
+
+/* visited sets the text when the link has been visited  */
+/* by default the color is purple */
+a:visited {
+    /* visited links */
+    color: rgb(0, 255, 204);
+}
+
+a:hover {
+    /* mouse over link*/
+    color: yellow;
+}
+
+
+a:active {
+    /* while clicking the link */
+    color: darkgreen;
+}
+
+a:focus {
+    /* when the link is focused with the keyboards using tab */
+    color: darkred;
+}
+
+/* If we want to set the same settings in various elements we can use a "," */
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+/* ****THE FARDER DOWN THE CSS FILE, THE MORE SPECIFIC THE RULES ARE, THIS MEANS THAT THE RULES WILL OVERRIDE THE PREVIOUS ONES**** */
+
+.body-text {
+    background-color: black;
+    padding: 40px;
+}
+
+/* this means that it will only select the p elements inside the class body-text */
+.body-text p {
+    color: white;
+}
+
+.body-text a {
+    color: yellow;
+}
+
+.body-text a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    text-decoration: none;
+}
+
+.body-text a:link {
+    /* unvisited links */
+    color: brown;
+}
+
+/* visited sets the text when the link has been visited  */
+/* by default the color is purple */
+.body-text a:visited {
+    /* visited links */
+    color: rgb(0, 255, 204);
+}
+
+.body-text a:hover {
+    /* mouse over link*/
+    color: yellow;
+}
+
+
+.body-text a:active {
+    /* while clicking the link */
+    color: darkgreen;
+}
+
+.body-text a:focus {
+    /* when the link is focused with the keyboards using tab */
+    color: darkred;
+}
+
+/* SOMETIMES WE NEED TO USE "!IMPORTANT" TO OVERRIDE THE PREVIOUS RULES THAT HAVE HIGHER SPECIFICITY */
+.important-link {
+    color: yellow !important;
+}
+
+/* STYLING LISTS */
+/* We can use the same style for the ul and ol */
+
+/* For ol we use numbers and letters, for ul we use different types of bullets */
+/* If we use list-style-type: none; we will remove the bullets or numbers from the list */
+
+/* We can use IMPORTED icons from the web using the url() function in the list-style-image property */
+/* LIKE THIS: 
+list-style-image: url(./images/arrow.png); */
+ol {
+    list-style-type: upper-roman;
+    background-color: chartreuse;
+    padding: 25px 40px;
+    /* When we center the text of the list,
+    the bullets or numbers will not be centered,
+    to fix this we use the following property: inside in the list-style-position */
+    text-align: center;
+    list-style-position: inside;
+    /* This will make the bullets or numbers to be inside the box */
+}
+
+ol li {
+    background-color: pink;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+
+/* For ol we use numbers and letters, for ul we use different types of bullets */
+ul {
+    list-style-type: square;
+    background-color: aqua;
+    padding: 25px 40px;
+}
+
+/* This means that we are styling the li elements inside the ul */
+ul li {
+    /* every list is an independent boxes */
+    background-color: black;
+    margin-bottom: 8px;
+    padding: 10px;
 }
