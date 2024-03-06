@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kevin Powell Tutorial!</title>
+    <link rel="stylesheet" href="stylesheet.css">
+
+</head>
+
+<body>
+    <h1>KEVIN POWELL YOUTUBE TUTORIALS</h1>
+    <h2>PARAGRAPHS</h2>
+    <p>My First Website</p>
+    <p>Building y first website.</p>
+    <!-- Paragraphs are used to write text in the body of the website. It is used to write long texts. -->
+
+    <h1>HEADINGS</h1>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+    <!-- The meaning of the headings is saying that this texts are more important than others -->
+    <!-- h7 is not a valid heading tag. -->
+
+    <h2>BOLD AND ITALIC</h2>
+    <!-- DO NOT USE <b></b> AND <i></i> BOTH HAVE NO MEANING IN THE TEXT LIKE <strong></strong> and <em></em> -->
+    <!-- To make a text bold, use the <strong>strong</strong> tag or if its less important than bold the <b>b</b> tag. <br> -->
+    <p> <strong>Fernando Alonso Díaz</strong> (born 29 July 1981) is a Spanish racing driver who won the Formula One
+        World Championship in 2005 and 2006 for the Renault team. He is often regarded as one of the <b>greatest Formula
+            One drivers in the history of the sport.</b> He has contested 17 seasons of Formula One. Outside Formula
+        One, Alonso won the 2018–19 FIA World Endurance Championship with Toyota Gazoo Racing. He won the 24 Hours of Le
+        Mans twice, in 2018 and 2019, and the 24 Hours of Daytona once in 2019.
+    </p>
+    <p>
+        <!-- To make the text italic, use the <em>em</em> tag or if its less important than italic the <i>i</i> tag. -->
+        <!-- If you want o make it italic and bold at the same time use the <strong>strong</strong> tag inside the
+        <em>em</em> -->
+        <em><strong>Kimi-Matias Räikkönen (born 17 October 1979)</strong></em>, nicknamed "Iceman", is a Finnish racing
+        driver currently driving in Formula One for Alfa Romeo Racing, racing under the Finnish flag. He won the 2007
+        Formula One World Championship in his first season with <i>Scuderia Ferrari.</i> After nine seasons racing in
+        Formula One, he competed in the World Rally Championship in 2010 and 2011, then returning to Formula One from
+        2012. In addition to this title, Räikkönen also finished second overall in 2003 and 2005, and third in 2008,
+        2012 and 2018.
+    </p>
+
+    <h2>LINKS</h2>
+    <!-- Anchor tag <a></a> is used to create links. The href attribute is used to specify the URL of the page the link goes to. -->
+    <!-- href means hypertext reference. -->
+    <!-- Its really important to include https in the tag, if dont put https the link will try to find it in my local files -->
+    <p>
+        <!-- This is an absolute link, it means that the link will take you to another website. -->
+        <!-- Relative links will take you to another page in the same website. Will search another .html file in the local file in the same folder -->
+        <a href="https://www.formula1.com/en/drivers/hall-of-fame/Juan_Manuel_Fangio.html">Juan Manuel Fangio Déramo</a>
+        (24 June 1911 – 17 July 1995), nicknamed El Chueco ("the bowlegged one", also
+        commonly translated as "bandy legged" ) or <a href="juanmanuelfangio.html">El Maestro</a> ("The Master"), was an
+        Argentine racing car driver. He dominated the first decade of Formula One racing, winning the World Drivers'
+        Championship five times.
+    </p>
+
+    <h2>IMAGES</h2>
+    <!-- Linking images with absolute links -->
+    <!-- The alt attribute is used to specify an alternate text for an image, if the image cannot be displayed. -->
+    <!-- src means source. -->
+    <img src="https://i0.wp.com/www.f1-grandprix.com/wp-content/uploads/2010/04/fangio_color-1680x720.jpg?resize=1680%2C720&ssl=1"
+        alt="juanmanuel" height=400 width=auto>
+
+    <!-- Linking images with relative links -->
+    <img src="images/digitalpaint.jpg" alt="testingrelativeimages" height=900 width=900>
+
+    <!-- Making an image a link to another page:  -->
+    <!-- First we use the <a></a> tag to create the link with href, then we use the <img> tag to create the image using src as source -->
+    <a href="https://freecatphotoapp.com"><img
+            src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+            alt="A cute orange cat lying on its back."></a>
+
+    <h2>SECTION</h2>
+    <!-- The <section></section> tag defines a section in a document. -->
+    <!-- It is used to group content in a document. -->
+    <!-- Like this: -->
+    <section>
+        <h2>Cat Photos</h2>
+        <p>See more <a target="_blank" href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com"><img
+                src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                alt="A cute orange cat lying on its back."></a>
+    </section>
+
+    <h2>LISTS</h2>
+    <!-- Unordered List <ul></ul> -->
+    <ul>
+        <li>cat nip</li>
+        <li>laser pointers</li>
+        <li>lasagna</li>
+    </ul>
+
+    <!-- Orders List <ol></ol> -->
+    <ol>
+        <li>flea treatment</li>
+        <li>thunder</li>
+        <li>other cats</li>
+    </ol>
+
+    <h2>FIGURE ELEMENT</h2>
+    <!-- The figure element represents self-contained content and will allow you to associate an image with a caption. -->
+    <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate.">
+    </figure>
+    <!-- To add the caption we need to use the <figcaption></figcaption> element. -->
+    <figure>
+        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+            alt="A slice of lasagna on a plate.">
+        <figcaption>Cats love lasagna.</figcaption>
+    </figure>
+
+    <h2>FORMS</h2>
+    <!-- We need a web form element to collect information from users. -->
+    <form action="https://freecatphotoapp.com/submit-cat-photo">
+        <input type="text" name="catphotourl" placeholder="cat photo URL" required>
+    </form>
+    <!-- ACTION ATTRIBUTE -->
+    <!-- The action attribute indicates where form data should be sent. For example, <form action="/submit-url"></form> tells the browser that the form data should be sent to the path /submit-url. -->
+
+    <!-- INPUT ELEMENT -->
+    <!-- The input element allows you several ways to collect data from a web form. -->
+    <!-- There are many kinds of inputs you can create using the type attribute. You can easily create a password field, reset button, or a control to let users select a file from their computer. -->
+    <!-- The type attribute on an input element creates different controls for the user to interact with. -->
+    <!-- In this case we are using "radio", this will create a radio button. Radio buttons are used when you want to let the user select one of a limited number of choices. -->
+    <!-- EXAMPLE IN THE CODE BELOW -->
+
+    <!-- LABEL -->
+    <!-- The label element is used to wrap the radio button and the text Indoor. -->
+    <!-- This way the user can click on the text to select the radio button. -->
+    <!-- With label the assign text will show in the text form and the radio button will be selected when the text is clicked. -->
+    <label><input type="radio" id="indoor" name="indoor-outdoor"> Indoor</label>
+    <label><input type="radio" id="outdoor" name="indoor-outdoor"> Outdoor</label>
+    <!-- This way it will allow the user to select both radio buttons. To fix this, we need to give each of the radio buttons a unique value for the name attribute. This way, when one is selected, the other will be unselected. -->
+
+    <!-- VALUE ATTRIBUTE -->
+    <!-- If you select the Indoor radio button and submit the form, the form data for the button is based on its name and value attributes. Since your radio buttons do not have a value attribute, the form data will include indoor-outdoor=on, which is not useful when you have multiple buttons. -->
+    <!-- The value attribute is used to define the value that should be submitted if the radio button is checked. -->
+    <!-- EXAMPLE IN THE CODE ABOVE -->
+
+    <!-- ID ATTRIBUTE -->
+    <!-- EXAMPLE IS IN THE CODE ABOVE -->
+    <!-- The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page. -->
+    <!-- The id attribute is used to select and modify specific elements with CSS or JavaScript. -->
+
+    <!-- NAME ATTRIBUTE -->
+    <!-- In order for a form's data to be accessed by the location specified in the action attribute, you must give the text field a name attribute and assign it a value to represent the data being submitted. For example, you could use the following syntax for an email address text field: <input type="text" name="email">. -->
+    <!-- Add the name attribute with the value personality to the checkbox input element. -->
+    <!-- While you won't notice this in the browser, doing this makes it easier for a server to process your web form,
+    especially when there are multiple checkboxes. -->
+    <input id="loving" type="checkbox" name="personality"> <label for="loving">Loving</label>
+
+    <!-- PLACEHOLDER -->
+    <!-- Placeholder text is used to give people a hint about what kind of information to enter into an input. For example,  -->
+
+    <!-- REQUIRED ATTRIBUTE -->
+    <!-- To prevent a user from submitting your form when required information is missing, you need to add the required attribute to an input element. No need to put a value to required-->
+
+    <!-- BUTTON ELEMENT with TYPE -->
+    <!-- The button element is a simple way to add a clickable action to your web form. -->
+    <!-- The button element can be used for other types of buttons, like a submit button, a reset button, or a button that does nothing when clicked. -->
+    <!-- Add the type attribute with the value submit to the button to make it clear that it is a submit button. -->
+    <button type="Submit">Submit</button>
+
+    <!-- LEGEND ELEMENT -->
+    <!-- The legend element acts as a caption for the content in the fieldset element. It gives users context about what they should enter into that part of the form. -->
+    <!-- APPLIED IN THE CODE BELOW -->
+
+    <!-- FIELDSET ELEMENT -->
+    <!-- The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. -->
+    <!-- This code will be duplicated with the code in LABEL, so we can see the difference when using the fieldset element. -->
+    <fieldset>
+        <legend>Is your cat an indoor or outdoor cat?</legend>
+        <label><input id="indoor" type="radio" name="indoor-outdoor" value="indoor"> Indoor</label>
+        <label><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor"> Outdoor</label>
+    </fieldset>
+
+    <!-- ANOTHER WAY TO USE INPUT ELEMENTS -->
+    <!-- There's another way to associate an input element's text with the element itself. You can nest the text within a label element and add a for attribute with the same value as the input element's id attribute. -->
+    <fieldset>
+        <legend>What's your cat's personality?</legend>
+        <input id="loving" type="checkbox"> <label for="loving">Loving</label>
+    </fieldset>
+
+    <!-- DIVS AND SPANS -->
+    <!-- Divs are used to create sections in the website. They are used to group elements together. They are block-level
+    elements. -->
+    <h2>DIVS AND SPANS</h2>
+    <div>
+        <p>This is <span class="span1">inside</span> a Div!</p>
+    </div>
+    <div>
+        <p>This is Div <span class="span2">number</span> 2</p>
+    </div>
+    <!-- Spans are used to create sections in the website. They are used to group elements together. They are inline -->
+
+
+    <!-- BOX MODEL CSS -->
+    <!-- The box model is a model used to understand the design and layout of elements in a web page. -->
+    <!-- The box model is made up of content, padding, border, and margin. -->
+
+    <h2>CSS BOX MODEL</h2>
+
+    <!-- This two boxes are explained in the stylesheet.css file. -->
+    <!-- We will put an image as a background of these boxes -->
+    <div class="firstBox">
+        <p>This is the html for the Box Model explanation in the stylesheet.css</p>
+    </div>
+
+    <div class="secondBox">
+        <p>This is the html for the Box Model explanation in the stylesheet.css</p>
+    </div>
+
+
+</body>
+
+</html>

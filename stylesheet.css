@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(3, 0, 47);
+    color: red;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+span {
+    color: yellow;
+    font-weight: bold;
+}
+
+/* We put a dot (.) when its a class */
+.span1 {
+    color: green;
+}
+
+/* BOX MODEL CSS  */
+/*  3 components:
+    -Margin
+    -Border
+    -Padding */
+.firstBox {
+    background-color: rgb(21, 0, 0);
+    height: 300px;
+    width: 300px;
+    margin: 200px;
+    /* margin is the space outside the border to all directions, the empty space is the background */
+    border: 10px solid yellow;
+    /* border is the border of the box */
+    /* Haves 3 components (width, style, color) */
+    padding: 60px;
+    /* Padding is the space inside the border to all directions */
+    /* To calculate the total width of the box we use the following formula: */
+    /* Total width=width+(left padding + right padding)+(left border + right border)+(left margin + right margin) */
+    /* total width = 300px+(60px + 60px)+(10px + 10px)+(200px + 200px) = 640px */
+
+}
+
+.secondBox {
+    color: aqua;
+    /* Its important to assign a background-color in case the background-image doesnt load */
+    background-color: blueviolet;
+    /* Puting an image as a background */
+    background-image: url(./images/digitalpaint.jpg);
+    background-repeat: round;
+    /* This will make the image not repeat */
+    /* Check the other options for background-repeat */
+    background-size: cover;
+    /* This will make the image cover the entire box */
+    /* Check the other options for background-size */
+
+    height: 500px;
+    width: auto;
+
+    /* Margin */
+    margin-top: 100px;
+    margin-bottom: 50px;
+    margin-left: 150px;
+    margin-right: 75px;
+    /* This is the same as the previous margin */
+    margin: 100px 75px 50px 150px;
+    /* If we only put 2 values, the first is the top and bottom and the second is the left and right */
+    /* margin: 100px 50px; */
+    /* If we use 3 values the first is the top, the second is the left and right and the third is the bottom */
+    /* margin: 100px 50px 25px; */
+
+    /* Border */
+    /* Border style have a lot of options other than the default(solid) */
+    border-style: solid;
+    border-top: 50px solid red;
+    border-bottom: 25px solid rgb(3, 0, 92);
+    border-left: 35px solid rgb(0, 89, 7);
+    border-right: 10px solid rgb(117, 95, 0);
+
+    /* Padding */
+    padding-top: 75px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 5px;
+    /* This is the same as the previous padding  */
+    /* top right bottom left */
+    padding: 75px 5px 10px 60px;
+    /* If we only put 2 values, the first is the top and bottom and the second is the left and right */
+    /* padding: 100px 50px; */
+    /* If we use 3 values the first is the top, the second is the left and right and the third is the bottom */
+    /* padding: 100px 50px 25px; */
+
+
+
+}
